@@ -170,7 +170,7 @@ Relax, nothing to do! 😌 Lengths are read from the files themselves and verifi
 | **Arsalan Ahmed**  | 25K-0754 |
 | **M. Yasir Uddin** | 25K-1007 |
 
-🎓 *Programming Fundamentals Final Project, FAST-NUCES Karachi*
+🎓 *Data Structures Final Project, FAST-NUCES Karachi*
 
 ---
 
