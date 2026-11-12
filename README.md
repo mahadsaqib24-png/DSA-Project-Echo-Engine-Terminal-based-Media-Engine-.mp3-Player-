@@ -1,15 +1,6 @@
 <div align="center">
 
-```
- ███████╗ ██████╗██╗  ██╗ ██████╗     ███████╗███╗   ██╗ ██████╗ ██╗███╗   ██╗███████╗
- ██╔════╝██╔════╝██║  ██║██╔═══██╗    ██╔════╝████╗  ██║██╔════╝ ██║████╗  ██║██╔════╝
- █████╗  ██║     ███████║██║   ██║    █████╗  ██╔██╗ ██║██║  ███╗██║██╔██╗ ██║█████╗
- ██╔══╝  ██║     ██╔══██║██║   ██║    ██╔══╝  ██║╚██╗██║██║   ██║██║██║╚██╗██║██╔══╝
- ███████╗╚██████╗██║  ██║╚██████╔╝    ███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║███████╗
- ╚══════╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝     ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝
-```
-
-# 🎵 Echo Engine 🎶
+# 🎵🎶 Echo Engine 🎶🎵
 
 ### Your music. Your playlists. Your terminal. 🔥
 
@@ -185,7 +176,7 @@ Relax, nothing to do! 😌 Lengths are read from the files themselves and verifi
 
 <div align="center">
 
-### Made with ❤️ and passion for Music and DSA 🎵
+### Made with luv and passion for Music and DSA 🎵
 
 ⭐ *Enjoyed Echo Engine? Give the repo a star!* ⭐
 
