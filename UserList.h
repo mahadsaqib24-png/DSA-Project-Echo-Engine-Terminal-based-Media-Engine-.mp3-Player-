@@ -6,7 +6,7 @@
 
 /*
 ==============================================================
-  MODULE 3c: Singly Linked List (authentication, users.txt)
+		Singly Linked List (authentication, users.txt)
   Every account is equal: anyone can play, search and upload.
 ==============================================================
 */
@@ -29,7 +29,7 @@ public:
 
     // File format: Username|Password
     // (an old optional third field is accepted and ignored, so existing files still work)
-    void loadUsers(string filename) {
+    void loadUsers(const string& filename) {
         ifstream in(filename.c_str());
         if (!in) return;
         string line, p[MAX_FIELDS];
@@ -50,23 +50,18 @@ public:
     }
 
     // true if the username exists and the password matches
-    bool authenticateUser(string username, string password) {
+    bool authenticateUser(const string& username, const string& password) {
         for (UserNode* n = head; n != NULL; n = n->next)
             if (n->username == username) return n->password == password;
         return false;
     }
 
-    // Case-insensitive, so "Bob" and "bob" can never be two accounts.
-    bool existsIgnoreCase(const string& name) const {
-        string key = toLower(name);
-        for (UserNode* n = head; n != NULL; n = n->next)
-            if (toLower(n->username) == key) return true;
-        return false;
-    }
+    // Case-sensitive: "Bob" and "bob" are two different accounts.
+    bool exists(const string& name) const { return hasUser(name); }
 
     // Adds an account in memory (O(1)). false if the name is taken.
     bool addUser(const string& name, const string& password) {
-        if (existsIgnoreCase(name)) return false;
+        if (hasUser(name)) return false;
         UserNode* n = new UserNode();
         n->username = name; n->password = password;
         n->next = head;

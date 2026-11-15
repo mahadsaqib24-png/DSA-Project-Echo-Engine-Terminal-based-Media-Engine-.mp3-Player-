@@ -2,6 +2,7 @@
 #define PLAYLIST_COLLECTION_H
 
 #include "PlaylistEngine.h"
+#include "Constants.h"
 
 /*
 =======================================================================
@@ -11,9 +12,6 @@
   it is the one that plays and the one new songs go into by default.
 ========================================================================
 */
-const int MAX_PLAYLISTS = 10;
-const int MAX_PLAYLIST_NAME = 24;
-
 class PlaylistCollection {
 private:
     PlaylistEngine* lists[MAX_PLAYLISTS];      // owned: created with new, freed in destroy()
@@ -112,8 +110,8 @@ public:
         string path = PlaylistEngine::playlistPath(username);
         ifstream in(path.c_str());
         if (in) {
-            string line, p[MAX_FIELDS];
-            int lineNo = 0, dur = 0, cur = -1, wantActive = 1;
+            string line, p[MAX_FIELDS], why;
+            int lineNo = 0, cur = -1, wantActive = 1;
             bool skipping = false;
             while (getline(in, line)) {
                 lineNo++;
@@ -126,12 +124,10 @@ public:
                 }
                 if (p[0] == "@ACTIVE") { if (f >= 2) toInt(p[1], wantActive); continue; }
                 if (skipping) continue;
-                if (f != 4) { reportBadLine(path, lineNo, "expected 4 fields"); continue; }
-                if (p[0].empty() || !toInt(p[3], dur) || dur <= 0) { reportBadLine(path, lineNo, "bad title or duration"); continue; }
-                if (cur < 0) cur = create("My Playlist");            // old single-list file
                 Song s;
-                s.title = p[0]; s.artist = p[1]; s.album = p[2]; s.durationSeconds = dur;
-                if (cur >= 0 && !lists[cur]->contains(s.title)) lists[cur]->addSong(s);
+                if (!parseSongLine(line, s, why)) { reportBadLine(path, lineNo, why); continue; }
+                if (cur < 0) cur = create("My Playlist");            // old single-list file
+                if (cur >= 0 && !lists[cur]->contains(s)) lists[cur]->addSong(s);
             }
             if (wantActive >= 1 && wantActive <= count) active = wantActive - 1;
         }
