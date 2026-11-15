@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=1
 CompilerSettings=10000000c0000000001000000
-UnitCount=25
+UnitCount=24
 
 [VersionInfo]
 Major=1
@@ -119,17 +119,8 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit8]
-FileName=Makefile
-Folder=
-Compile=0
-Link=0
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
 [Unit10]
-FileName=AppPaths.h
+FileName=AudioPlayer.h
 Folder=
 Compile=1
 Link=1
@@ -139,16 +130,6 @@ BuildCmd=
 CompileCpp=1
 
 [Unit11]
-FileName=AudioPlayer.h
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit12]
 FileName=colours.h
 CompileCpp=1
 Folder=
@@ -158,7 +139,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit13]
+[Unit12]
 FileName=Constants.h
 CompileCpp=1
 Folder=
@@ -168,7 +149,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit14]
+[Unit13]
 FileName=Dashboard.h
 CompileCpp=1
 Folder=
@@ -178,7 +159,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit15]
+[Unit14]
 FileName=FileUtils.h
 CompileCpp=1
 Folder=
@@ -188,7 +169,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit16]
+[Unit15]
 FileName=HistoryStack.h
 CompileCpp=1
 Folder=
@@ -198,7 +179,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit17]
+[Unit16]
 FileName=LibraryIndex.h
 CompileCpp=1
 Folder=
@@ -208,7 +189,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit18]
+[Unit17]
 FileName=MediaPlayerApp.h
 CompileCpp=1
 Folder=
@@ -218,7 +199,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit19]
+[Unit18]
 FileName=PlaybackManager.h
 CompileCpp=1
 Folder=
@@ -228,7 +209,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit20]
+[Unit19]
 FileName=PlayerEngine.h
 CompileCpp=1
 Folder=
@@ -238,7 +219,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit21]
+[Unit20]
 FileName=PlaylistCollection.h
 CompileCpp=1
 Folder=
@@ -248,7 +229,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit22]
+[Unit21]
 FileName=PlaylistEngine.h
 CompileCpp=1
 Folder=
@@ -258,7 +239,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit23]
+[Unit22]
 FileName=SongQueue.h
 CompileCpp=1
 Folder=
@@ -268,8 +249,18 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit24]
+[Unit23]
 FileName=Structs.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit24]
+FileName=UserList.h
 CompileCpp=1
 Folder=
 Compile=1
@@ -309,6 +300,16 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
+FileName=AppPaths.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit8]
 FileName=animations.h
 CompileCpp=1
 Folder=
