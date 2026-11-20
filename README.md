@@ -242,7 +242,8 @@ The data structures, parsers, search and shuffle logic are covered by `UnitTests
 ```bash
 make test
 ```
-
+## View The Architecture
+[![Architecture diagram of mahadsaqib24-png/dsa-project-echo-engine-terminal-based-media-engine-.mp3-player-](https://gitdiagram.com/mahadsaqib24-png/dsa-project-echo-engine-terminal-based-media-engine-.mp3-player-/diagram.png)](https://gitdiagram.com/mahadsaqib24-png/dsa-project-echo-engine-terminal-based-media-engine-.mp3-player-?utm_source=readme&utm_medium=picture)
 ---
 
 ## 👥 Meet the Team
