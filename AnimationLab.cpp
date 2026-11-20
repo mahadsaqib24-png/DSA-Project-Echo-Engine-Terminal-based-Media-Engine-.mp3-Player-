@@ -1,7 +1,9 @@
-// Echo Engine: Animation Lab
-// Build:  g++ AnimationLab.cpp -o lab
-// ASCII fallback:  g++ -DECHO_ASCII AnimationLab.cpp -o lab
+/* Echo Engine: Animation Lab
+Build:  make animationlab     (or: g++ -std=c++98 AnimationLab.cpp animations.cpp colours.cpp -o animationlab)
+ASCII fallback:  add -DECHO_ASCII to the command above
+This is a testing file for all animations.h and demos.h animations */
 #include "animations.h"
+#include "demos.h"
 
 int main() {
     initTerminal();
